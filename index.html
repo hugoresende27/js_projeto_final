@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Jogo Memória</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
+      rel="stylesheet"
+    />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/5.css" rel="stylesheet" />
+  </head>
+
+ <body>
+    <main>
+
+        <div id="mesa" class="mesa">
+          
+        </div>
+
+        <div class="display">
+          <!--DISPLAY-->
+          <span id="minuto" >00</span>m<span>:</span><span id="segundo">00</span>s
+          Pontos: <span id="total"></span>
+          Nivel: <span id="nivel"></span>
+          <button style="visibility:hidden" id="button_next" class="hero-btn" onclick="window.location.reload();">Nivel seguinte</button>
+        </div>
+
+        <div class="display-2">
+          <span id="msg">Clique nas cartas</span>
+          
+        </div>
+
+   
+
+
+    </main>
+
+    <script src="js2/variáveis_globais.js"></script>
+
+    <script src="js2/baralhar_distribuir.js"></script>
+
+    <script src="js2/descobrir_comparar.js"></script>
+
+    <script src="js2/certo_errado.js"></script>
+
+    <script src="js2/Iniciar_e_eventos.js"></script>
+
+    <script src="js2/cronometro.js"></script>
+        
+    
+  </body>
+</html>
