@@ -38,9 +38,10 @@ function descobrir(){
         certo(mostrar);
         document.getElementById('msg').style.color = 'green';
         document.getElementById('msg').innerHTML = "Acertou";
-        if (total == 12){
+        if (total == 1){
             document.getElementById('msg').innerHTML = "Parabéns nível completo!";
-            nivel ++;
+            nivel =10;
+            
             document.getElementById('button_next').style.visibility="visible"
         }
         

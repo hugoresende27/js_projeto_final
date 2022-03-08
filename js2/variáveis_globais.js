@@ -12,10 +12,15 @@ var grupoCartas = [
  "🙈",
  "🐖"];
 
+// var nivel = 1;
+
 var totalCartas=grupoCartas.concat(grupoCartas);
 var total = 0;
-var nivel = 1;
 
+
+
+// localStorage.setItem('nivel', nivel);
+// console.log(nivel)
 
 /*
 Aplicar um cronometro e um contador

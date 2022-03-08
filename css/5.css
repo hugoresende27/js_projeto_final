@@ -41,7 +41,7 @@ main {
   top: 0;
   bottom: 0;
   transform: rotateY(-180deg);
-  /* backface-visibility: hidden; */
+  backface-visibility: hidden;
   background-color: white;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.3em;
@@ -150,4 +150,47 @@ main {
   font-size: 1.2rem;
   color: greenyellow;
   cursor: pointer;
+}
+
+
+footer{
+  padding: 0.5rem;
+  text-align: center;
+  color:#000;
+  /* position: relative; */
+  position: absolute;
+  bottom: 0rem; 
+  font-size: 1rem;
+  /* left: 50%;  */
+  /* transform: translateX(-50%); */
+  /* clear: both; */
+  /* position: relative; */
+  /* height: 200px; */
+  /* margin-top: -200px; */
+
+}
+
+footer:hover{
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  /* transform:  scale(1.1);  */
+}
+footer:hover a{
+  color: yellow;
+  font-weight: 700;
+}
+footer:hover a:hover{
+  font-weight: 900;
+  color:greenyellow;
+}
+
+footer a{
+ color: #fff;  /*cor dos links a preto*/
+ text-decoration: none;     /*retira o sublinhado dos links*/
+
+}
+
+footer a:hover{
+  color: var(--gold-cor);
 }
