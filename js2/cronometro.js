@@ -1,14 +1,14 @@
-let segundos = 0;
-let minutos = 0;
+let segundos = 59;
+let minutos = 1;
 
 function segundo(){
     //incrementa os segundos
-    segundos++;
-    if(segundos==60){
+    segundos--;
+    if(segundos==00){
         //incrementa os minutos
-        minutos++;
+        minutos--;
         //Zerar os segundos
-        segundos=0;
+        segundos=60;
         //escreve os minutos
         document.getElementById('minuto').innerHTML=minutos
     }

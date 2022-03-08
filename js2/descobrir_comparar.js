@@ -26,7 +26,7 @@ function descobrir(){
  }
 
  function comparar(mostrar){
-
+    
     
     
     if(mostrar[0].dataset.value===mostrar[1].dataset.value)
@@ -38,10 +38,14 @@ function descobrir(){
         certo(mostrar);
         document.getElementById('msg').style.color = 'green';
         document.getElementById('msg').innerHTML = "Acertou";
-        if (total == 1){
-            document.getElementById('msg').innerHTML = "Parabéns nível completo!";
-            nivel =10;
+        if (total == 6){
+
             
+            
+            document.getElementById('msg').innerHTML = "Parabéns nível completo!";
+            nivel ++
+            localStorage.setItem('nivel', nivel);
+            console.log(nivel)
             document.getElementById('button_next').style.visibility="visible"
         }
         

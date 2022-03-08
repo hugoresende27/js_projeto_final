@@ -1,26 +1,29 @@
 var grupoCartas = [
-"🦄", 
-"🍦",
- "🌈", 
+// "🦄", 
+// "🍦",
+//  "🌈", 
  "👽", 
  "👾", 
- "🤖", 
- "👹", 
- "👺",
+//  "🤖", 
+//  "👹", 
+//  "👺",
  "🍇",
  "🕴️",
  "🙈",
  "🐖"];
 
-// var nivel = 1;
 
 var totalCartas=grupoCartas.concat(grupoCartas);
-var total = 0;
+var total = Number(0);
+
+document.getElementById('total').innerHTML = total;
 
 
 
-// localStorage.setItem('nivel', nivel);
-// console.log(nivel)
+var nivel = Number(localStorage.getItem('nivel'));
+
+console.log(nivel)
+
 
 /*
 Aplicar um cronometro e um contador
@@ -30,3 +33,19 @@ Completar as interfaces (se perder o jogo mostrar uma mensagem ou imagem, se gan
 
 */
 
+
+function reset()
+{
+    localStorage.clear();
+    window.location.reload()
+    
+}
+
+
+
+function PlaySound(melody) {
+    // alert("On Press of "+melody);
+    var path = "video"
+    var snd = new Audio(path + melody + ".mp4");
+    snd.play();
+}

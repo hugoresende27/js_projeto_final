@@ -18,19 +18,22 @@
  <body>
     <main>
 
-        <div id="mesa" class="mesa">
+        <div id="mesa" class="mesa" onclick="document.getElementById('bflat').play()">
 
         
 
           
         </div>
 
+
+
         <div class="display">
           <!--DISPLAY-->
-          <span id="minuto" >00</span>m<span>:</span><span id="segundo">00</span>s
+          <span id="minuto" >01</span>m<span>:</span><span id="segundo">59</span>s
           Pontos: <span id="total"></span>
           Nivel: <span id="nivel"></span>
           <button style="visibility:hidden" id="button_next" class="hero-btn" onclick="window.location.reload();">Nivel seguinte</button>
+          <button  id="button_reset" class="hero-btn" onclick="reset()">Reset</button>
         
         </div>
 
@@ -40,7 +43,9 @@
           
         </div>
 
-        
+        <audio id="bflat" src="/js2/video.mp4"></audio>
+        <!-- <button onclick="document.getElementById('bflat').play()">Play!</button>   -->
+
         <footer>
           <p>Copyright 2021 - by Hugo Resende Products </p>
           <p>
