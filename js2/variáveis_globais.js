@@ -1,36 +1,38 @@
-var grupoCartas = [
-// "🦄", 
-// "🍦",
-//  "🌈", 
- "👽", 
- "👾", 
-//  "🤖", 
-//  "👹", 
-//  "👺",
- "🍇",
- "🕴️",
- "🙈",
- "🐖"];
+// var grupoCartas = [
+// // "🦄", 
+// // "🍦",
+// //  "🌈", 
+//  "👽", 
+//  "👾", 
+// //  "🤖", 
+// //  "👹", 
+// //  "👺",
+//  "🍇",
+//  "🕴️",
+//  "🙈",
+//  "🐖"];
 
  
 // var totalCartas=grupoCartas.concat(grupoCartas);
 
-// var car1 = '<img src="images/car1.jpg" style="max-width:110px; max-height:110px"';
-// var car22 = '<img src="images/car22.jpg" style="max-width:110px; max-height:110px"';
-// var car3 = '<img src="images/car3.jpg" style="max-width:110px; max-height:110px"';
-// var car4 = '<img src="images/car4.jpg" style="max-width:110px; max-height:110px"';
-// var car5 = '<img src="images/car5.jpg" style="max-width:110px; max-height:110px"';
-// var car6 = '<img src="images/car6.jpg" style="max-width:110px; max-height:110px"';
+var car1 = 'images/car1.jpg';
+var car2 = 'images/car2.jpg';
+var car3 = 'images/car3.jpg';
+var car4 = 'images/car4.jpg';
+var car5 = 'images/car5.jpg';
+var car6 = 'images/car6.jpg';
+var car7 = 'images/car7.jpg';
+var car8 = 'images/car8.jpg';
 
-// var grupoCartas = [
-// car1,
-// car22,
-// car3,
-// car4,
-// car5,
-// car6,
-//  "🐖",
-//  "🐖",];
+var grupoCartas = [
+car1,
+car2,
+car3,
+car4,
+car5,
+car6,
+car7,
+car8,];
 
  
 var totalCartas=grupoCartas.concat(grupoCartas);

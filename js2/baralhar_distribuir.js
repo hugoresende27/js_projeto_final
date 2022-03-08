@@ -17,12 +17,21 @@ function DistribuirCartas()
     document.getElementById('nivel').innerHTML = nivel;
     
     baralhar.forEach(
+    // function (element){
+    //     var carta=document.createElement("div");
+    //     carta.innerHTML=
+    //     "<div class='carta' data-value="+element+">"+
+    //             "<div class='carta__conteudo'>"+
+    //             element+
+    //         "</div>"+
+    //         " </div>";
+
     function (element){
         var carta=document.createElement("div");
         carta.innerHTML=
         "<div class='carta' data-value="+element+">"+
-                "<div class='carta__conteudo'>"+
-                element+
+                "<img class='carta__conteudo' src="+element+" style='width:110px;height:110px;  '>"+
+                
             "</div>"+
             " </div>";
         
